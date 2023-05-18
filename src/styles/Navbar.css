@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.navbar .leftSide img {
+  width: 8em;
+  height: 4em; /* this is for zoom-in and out for the logo */
+}
+
+.navbar .leftSide.fixed-logo {
+  position: fixed;
+}
+
+/* Add padding to body equal to navbar height */
+body {
+  padding-top: 0rem;
+}
+
+/* Media Queries for Responsive Navbar */
+@media only screen and (max-width: 900px) {
+  .navbar .leftSide {
+    padding-left: 50px;
+  }
+}

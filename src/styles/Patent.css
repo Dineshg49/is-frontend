@@ -1,0 +1,54 @@
+.headerContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.headerContainer h1 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Hahmlet';
+  margin-bottom: 10px;
+}
+
+.headerContainer img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For screens larger than 768px */
+  /* .headerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .headerContainer h1 {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  .headerContainer p {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .headerContainer .button-row {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* For screens smaller than 768px */
+  
+  .headerContainer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  
+}
